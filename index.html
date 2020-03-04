@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Youtube Clone</title>
+</head>
+<body>
+    <main>
+        <!-- Navigation -->
+        <header>
+            <nav class="main-nav">
+                <div class="left">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                    <a href="#"  class="text-youtube"><i class="fab fa-youtube"></i>Youtube<sup class="sup">pl</sup></a>
+                </div>
+                <div class="middle">
+                    <form>
+                        <div class="input-container">
+                            <input type="text" placeholder="Search" class="text-input">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-video"></i></a></li>
+                        <li><a href="#"><i class="fas fa-th"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                         <a href="#" class="account">J</a> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--  container for thumbnail and main video -->
+        <section class="wrapper">
+            <!-- container for comments and main video -->
+            <div class="video-comments-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/Vhh_GeBPOhs" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <h1>Steve Ballmer: Developers</h1>
+                <!-- Main video settings -->
+                <div class="main-video-settings">
+                    <p class="views">2,213,397 views<time datetime="2018-04-14">14 Apr 2018</time></p>
+                     <div class="settings-container">
+                        <div class="likes-dislikes">
+                            <a href="#"><i class="fas fa-thumbs-up"></i>13k</a>
+                            <a href="#"><i class="fas fa-thumbs-down"></i>655</a>
+                        </div>
+                        <div class="video-settings">
+                            <a href="#"><i class="fas fa-share"></i>SHARE</a>
+                            <a href="#"><i class="fas fa-save"></i>SAVE</a>
+                            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Channel description -->
+                <div class="channel-description-container">
+                    <div class="container container-d">
+                        <a href="#" class="channel-logo">J</a>
+                        <div class="channel-description">
+                            <div class="description-container">
+                                <div class="channel-name-container">
+                                    <a href="#">MrWueb007</a>
+                                    <p class="channel-subscribers">243 Subscribers</p>
+                                </div>
+                                
+                                    <button class="btn-primary">Subscribe</button>
+                                
+                            </div>
+                            <p>Uno de los peces gordos de Microsoft, en lo que parece una presentación de esta compañía,
+                                 no para de hablar de los "developers". 
+                            </p>
+                            <a href="#" class="show-more">SHOW MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submitting form -->
+                <div class="submit-forms-container">
+                    <span>1394 Comments</span> <a href="#"><i class="fas fa-sort-amount-down"></i>SORT BY</a>
+                    <div class="container">
+                        <a href="#" class="viewer-channels-logo">K</a>
+                        <input type="text" class="comment-input" placeholder="Add a public commetn...">
+                         
+                    </div>
+                </div>
+                <!-- Comments -->
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>Crazzynet</span><span class="submitted-time">  2 Years ago</span>
+                        <p>How many lines of code did he do before going on stage</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 6.5k</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i>  REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 80 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>Cornish Pixy</span><span class="submitted-time">   4 Years ago</span>
+                        <p>Cocaine is a hell of a drug.</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i>   3.2k</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 21 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>John Smith</span><span class="submitted-time">  2 Months ago</span>
+                        <p>Bill Gates said, "Write some lines of code." and he understood, "Do some lines of coke."</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 1k</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 5 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>FeatherlessAngel</span><span class="submitted-time">  1 Year ago</span>
+                        <p>looks like he ate the worlds hottest burrito</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 1k</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 8 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>JMCrafted                        </span><span class="submitted-time">  3 Years ago</span>
+                        <p>why is he sweating so much?</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 1.7k</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 94 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>Paulo Nideck - Inglês direto ao ponto</span><span class="submitted-time">  1 Year ago</span>
+                        <p>If he continued saying developers he would actually explode</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 486</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        <p><a href="#"><i class="fas fa-sort-down"></i> View 3 replies</a></p>
+                    </div>
+                </div>
+                <div class="container user-comments">
+                    <a href="#" class="viewer-channels-logo">S</a>
+                    <div class="viewer-comments-description">
+                        <span>Artificial Neuron</span><span class="submitted-time">  3 Days ago (edited)</span>
+                        <p>Microsoft: Ballmer, we have a challenge for you. You need to say the word</p>
+                        <a href="#"><i class="fas fa-thumbs-up"></i> 4</a>
+                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!-- container for thumbnail videos -->
+           <div class="thumnbail-videos">
+               <!-- top video contianer -->
+            <div class="top-video-container">
+                <div class="top-container">
+                    <p>UP NEXT</p>
+                    <span>AUTOPLAY <i class="fas fa-toggle-on"></i></span>
+                </div>
+                <div class="container-thumbnail">
+                    <iframe  
+                    src="https://www.youtube.com/embed/I14b-C67EXY" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <div class="thumnbail-video-description">
+                        <p>Steve Ballmer: going crazy on stage</p>
+                        <span> 
+                        Recommended for you</span>
+                    </div>
+                </div>
+            </div> 
+            <!--top video contianer end -->
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UF8uR6Z6KLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>Steve Jobs' 2005 Stanford Commencement Address</p>
+                    <span>33,776,176 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m2Ux2PnJe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>Hour of Code - Bill Gates explains If statements </p>
+                    <span>955,155 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgooqyWMTxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>Hour of Code - Mark Zuckerburg teaches Repeat Loops </p>
+                    <span>868,252 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F9GujgK0y2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <div class="thumnbail-video-description">
+                    <p>Coding is Easy & Why you should learn coding | AeeKayPlus </p>
+                    <span>4,445,481 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wVn1TqUfZjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>Mark Zuckerberg on helping others learn to code </p>
+                    <span>179,513 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mmQG_BCiVHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>[in]genius: facebook's youngest engineer</p>
+                    <span>2,395,947 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/azcrPFhaY9k?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>How To Think Like A Programmer </p>
+                    <span>356,096 views</span>
+                </div>
+            </div>
+            <div class="container-thumbnail">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/egQH4vM1q1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="thumnbail-video-description">
+                    <p>Hello, World! Award Winning Short Film (Shot on GH4) </p>
+                    <span>594,037 views</span>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</body>
+</html>
