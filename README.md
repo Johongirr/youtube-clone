@@ -11,7 +11,7 @@
 
 
 ## Author
-:man Johongir 
+:man: Johongir 
 * Github [Johongir](https://github.com/Johongirr)
 
 ## Show your support
