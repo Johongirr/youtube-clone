@@ -2,7 +2,7 @@
 
 
 > ### Project part of Odin [curriculum](https://www.theodinproject.com/courses/html-and-css/lessons/embedding-images-and-video)
-> ### Visit to [view]() a project
+> ### Visit to [view](https://johongirr.github.io/youtube-clone/) a project
 
 ## Built with
  * HTML5
