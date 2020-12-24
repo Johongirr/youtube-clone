@@ -3,243 +3,709 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Youtube Clone</title>
 </head>
 <body>
-    <main>
-        <!-- Navigation -->
-        <header>
-            <nav class="main-nav">
-                <div class="left">
-                    <a href="#"><i class="fas fa-bars"></i></a>
-                    <a href="#"  class="text-youtube"><i class="fab fa-youtube"></i>Youtube<sup class="sup">pl</sup></a>
+   
+    <!---------------------- Header and navbar inside of it ------------------------>
+    <header class="header">
+        <nav class="nav flex flex--space-between">
+            <ul class="nav__list-left flex flex--align-items-center">
+                <li class="nav__list-left-item pr-4">
+                    <div class="nav__list-left-hamburger">
+                        <div class="nav__list-left-bars"></div>
+                        <div class="nav__list-left-bars"></div>
+                        <div class="nav__list-left-bars"></div>
+                    </div>
+                </li>
+                <li class="nav__list-left-item">
+                    <a href="#" class="nav__list-left-link flex flex--align-items-center">
+                        <span class="nav__list-left-link-logo pr-1">
+                            <i class="fa fa-youtube-play fa-2x" ></i>
+                        </span>
+                        <span class="nav__list-left-link-text">
+                              Youtube
+                        </span>  
+
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__form-container flex flex--align-items-center">
+                <form action="#" class="form nav__form">
+                    <input type="text" placeholder="Search" class="nav__form-input">
+                </form>
+                <a href="#" class="nav__form-search-bar flex flex--align-items-center flex--justify-content-center">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+            <ul class="nav__list-right flex flex--align-items-center flex--justify-content-end">
+                <li class="nav__list-item pr-5">
+                    <a href="#" class="nav__list-create">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav__list-item pr-5">
+                    <a href="#" class="nav__list-youtube-apps">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav__list-item pr-5">
+                    <a href="#" class="nav__list-notifications">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-account">
+                        <img src="https://yt3.ggpht.com/yti/ANoDKi5Mt4jvHRG6H82B9g01twahnBDsLoiMlHkUDw=s88-c-k-c0x00ffffff-no-rj-mo" alt="account images of youtube" class="nav__list-account-img">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <!---------------------- Main section where videos are embedded ------------------------>
+    <main class="main">
+        <!---------------------- Main video ------------------------>
+        <section class="main-video">
+            <figure class="main-video__container mb-1">
+                <iframe class="mb-1" height="515px" src="https://www.youtube.com/embed/aMsSF1Il3IY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption class="main-video__caption">
+                    LeetCode 442. Find All Duplicates in an Array (Solution Explained)
+                </figcaption>
+            </figure>
+            <div class="main-video__details flex flex--justify-content-space-between flex--align-items-center">
+                <div class="main-video__details_left pb-1">
+                    <p class="main-video__details-paragraph">
+                        67,553 view  <span class="main-video__details-time">Premiered on <time datetime="22-09-2019">22 Sept 2019</time></span> 
+                    </p>
                 </div>
-                <div class="middle">
-                    <form>
-                        <div class="input-container">
-                            <input type="text" placeholder="Search" class="text-input">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
+                <div class="main-video__details-right flex">
+                    <div class="main-video__details-like-dislike-container mr-2 pb-1">
+                        <a href="#" class="main-video__details-like pr-1">
+                            <i class="fa fa-thumbs-up icon-size-2" aria-hidden="true"></i>    
+                            1.9K
+
+                        </a>
+                        <a href="#" class="main-video__details-dislike">
+                            <i class="fa fa-thumbs-down icon-size-2" aria-hidden="true"></i>     35
+
+                        </a>
+                    </div>
+                    <div class="main-video__details-share-save-report pb-1 flex flex--align-items-center">
+                        <a href="#" class="main-video__details-save mr-2">
+                            <i class="fa fa-share" aria-hidden="true"></i>
+                         SHARE
+                        </a>
+                        <a href="#" class="main-video__details-share mr-2">
+                            <i class="fa fa-bookmark-o icon-size-2" aria-hidden="true"></i>
+                            SAVE
+                        </a>
+                        <a href="#" class="main-video__details-report mr-2">
+                            <i class="fa fa-ellipsis-h icon-size-2" aria-hidden="true"></i>
+                             
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-video__channel pb-5 flex flex--align-items-center flex--justify-content-space-between mt-2">
+                <div class="main-video__channel-left flex">
+                    <img src="https://yt3.ggpht.com/ytc/AAUvwnhDzZbKQCjKes-oMcb_pU4nV1qan1VCvzBiRQVFFw=s88-c-k-c0xffffffff-no-rj-mo" alt="image of author of this channel" class="main-video__channel-logo mr-2">
+                    <p class="main-video__channel-name">
+                        Nick White <br>
+                        <span class="main-video__channel-subscription-amount">
+                            114K subscribers
+                        </span>
+                    </p>
+                </div>
+                <div class="main-video__channel-right flex flex--align-items-center">
+                    <button class="main-video__channel-subscribe-btn mr-1">
+                        SUBSCRIBED
+                    </button>
+                    <a href="#" class="main-video__channel-notification-bell">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main-video__channel-comment-container">
+                <div class="main-video__channel-comment-amount-sortby pt-3 pb-3 flex">
+                    <p class="main-video__channel-comment-amount  pr-5">
+                        180 Comments
+                    </p>
+                    <a href="#" class="main-video__channel-comment-sortby">
+                        <span class="main-video__channel-comment-sortby-btn">
+                            <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        </span>
+                        SORT BY
+                    </a>
+                </div>
+                <div class="main-video__channel-add-comment pb-5 flex">
+                    <img src="https://yt3.ggpht.com/yti/ANoDKi5Mt4jvHRG6H82B9g01twahnBDsLoiMlHkUDw=s88" alt="current user's account image" class="main-video__channel-add-comment-logo mr-2">
+                    <form action="#" class="main-video__channel-add-comment-form">
+                        <input type="text" placeholder="Add a public comment..." class="main-video__channel-add-comment-input">
                     </form>
                 </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-video"></i></a></li>
-                        <li><a href="#"><i class="fas fa-th"></i></a></li>
-                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                         <a href="#" class="account">J</a> 
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!--  container for thumbnail and main video -->
-        <section class="wrapper">
-            <!-- container for comments and main video -->
-            <div class="video-comments-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/Vhh_GeBPOhs" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h1>Steve Ballmer: Developers</h1>
-                <!-- Main video settings -->
-                <div class="main-video-settings">
-                    <p class="views">2,213,397 views<time datetime="2018-04-14">14 Apr 2018</time></p>
-                     <div class="settings-container">
-                        <div class="likes-dislikes">
-                            <a href="#"><i class="fas fa-thumbs-up"></i>13k</a>
-                            <a href="#"><i class="fas fa-thumbs-down"></i>655</a>
-                        </div>
-                        <div class="video-settings">
-                            <a href="#"><i class="fas fa-share"></i>SHARE</a>
-                            <a href="#"><i class="fas fa-save"></i>SAVE</a>
-                            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-                        </div>
-                    </div>
+                <div class="main-video__channel-comments-container">
                    
-                </div>
-                <!-- Channel description -->
-                <div class="channel-description-container">
-                    <div class="container container-d">
-                        <a href="#" class="channel-logo">J</a>
-                        <div class="channel-description">
-                            <div class="description-container">
-                                <div class="channel-name-container">
-                                    <a href="#">MrWueb007</a>
-                                    <p class="channel-subscribers">243 Subscribers</p>
-                                </div>
-                                
-                                    <button class="btn-primary">Subscribe</button>
-                                
-                            </div>
-                            <p>Uno de los peces gordos de Microsoft, en lo que parece una presentación de esta compañía,
-                                 no para de hablar de los "developers". 
+                    <div class="main-video__channel-comment-container flex pb-4">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh1EZCdZyI9ZfTG6Yb9QBc7-cPAMDCdRC9X0w=s48-c-k-c0xffffffff-no-rj-mo" alt="" class="main-video__channel-comment-logo mr-2">
+                        <div class="main-video__channel-comment-details">
+                            <p class="main-video__channel-comment-author ">
+                                Pokemon Master 
+                                <span class="main-video__channel-comment-date">
+                                    4 months ago
+                                </span>
                             </p>
-                            <a href="#" class="show-more">SHOW MORE</a>
+                           
+                            <p class="main-video__channel-comment pb-1">
+                                Damn....this guy is a genius!!!! Though he looks lazy all the time!!
+                            </p>
+                            <div class="main-video__channel-comment-like-dislike-reply">
+                                <a href="#" class="main-video__channel-like pr-2">
+                                    <i class="fa fa-thumbs-up"></i>    33
+                                </a>
+                                <a href="#" class="main-video__channel-dislike pr-2">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="main-video__channel-like">
+                                    REPLY
+                                </a>
+                            </div>
+                            <a href="#" class="main-channel-video__comment-replies pt-1">
+                                <i class="fa fa-caret-down pr-2"></i> View 3 replies
+                            </a>
                         </div>
                     </div>
-                </div>
-                <!-- Submitting form -->
-                <div class="submit-forms-container">
-                    <span>1394 Comments</span> <a href="#"><i class="fas fa-sort-amount-down"></i>SORT BY</a>
-                    <div class="container">
-                        <a href="#" class="viewer-channels-logo">K</a>
-                        <input type="text" class="comment-input" placeholder="Add a public commetn...">
-                         
+                    <div class="main-video__channel-comment-container flex pb-4">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh1EZCdZyI9ZfTG6Yb9QBc7-cPAMDCdRC9X0w=s48-c-k-c0xffffffff-no-rj-mo" alt="" class="main-video__channel-comment-logo mr-2">
+                        <div class="main-video__channel-comment-details">
+                            <p class="main-video__channel-comment-author ">
+                                Pokemon Master 
+                                <span class="main-video__channel-comment-date">
+                                    4 months ago
+                                </span>
+                            </p>
+                           
+                            <p class="main-video__channel-comment pb-1">
+                                Damn....this guy is a genius!!!! Though he looks lazy all the time!!
+                            </p>
+                            <div class="main-video__channel-comment-like-dislike-reply">
+                                <a href="#" class="main-video__channel-like pr-2">
+                                    <i class="fa fa-thumbs-up"></i>    33
+                                </a>
+                                <a href="#" class="main-video__channel-dislike pr-2">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="main-video__channel-like">
+                                    REPLY
+                                </a>
+                            </div>
+                            <a href="#" class="main-channel-video__comment-replies pt-1">
+                                <i class="fa fa-caret-down pr-2"></i> View 3 replies
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- Comments -->
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>Crazzynet</span><span class="submitted-time">  2 Years ago</span>
-                        <p>How many lines of code did he do before going on stage</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 6.5k</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i>  REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 80 replies</a></p>
+                    <div class="main-video__channel-comment-container flex pb-4">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh1EZCdZyI9ZfTG6Yb9QBc7-cPAMDCdRC9X0w=s48-c-k-c0xffffffff-no-rj-mo" alt="" class="main-video__channel-comment-logo mr-2">
+                        <div class="main-video__channel-comment-details">
+                            <p class="main-video__channel-comment-author ">
+                                Pokemon Master 
+                                <span class="main-video__channel-comment-date">
+                                    4 months ago
+                                </span>
+                            </p>
+                           
+                            <p class="main-video__channel-comment pb-1">
+                                Damn....this guy is a genius!!!! Though he looks lazy all the time!!
+                            </p>
+                            <div class="main-video__channel-comment-like-dislike-reply">
+                                <a href="#" class="main-video__channel-like pr-2">
+                                    <i class="fa fa-thumbs-up"></i>    33
+                                </a>
+                                <a href="#" class="main-video__channel-dislike pr-2">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="main-video__channel-like">
+                                    REPLY
+                                </a>
+                            </div>
+                            <a href="#" class="main-channel-video__comment-replies pt-1">
+                                <i class="fa fa-caret-down pr-2"></i> View 3 replies
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>Cornish Pixy</span><span class="submitted-time">   4 Years ago</span>
-                        <p>Cocaine is a hell of a drug.</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i>   3.2k</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 21 replies</a></p>
+                    <div class="main-video__channel-comment-container flex pb-4">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh1EZCdZyI9ZfTG6Yb9QBc7-cPAMDCdRC9X0w=s48-c-k-c0xffffffff-no-rj-mo" alt="" class="main-video__channel-comment-logo mr-2">
+                        <div class="main-video__channel-comment-details">
+                            <p class="main-video__channel-comment-author ">
+                                Pokemon Master 
+                                <span class="main-video__channel-comment-date">
+                                    4 months ago
+                                </span>
+                            </p>
+                           
+                            <p class="main-video__channel-comment pb-1">
+                                Damn....this guy is a genius!!!! Though he looks lazy all the time!!
+                            </p>
+                            <div class="main-video__channel-comment-like-dislike-reply">
+                                <a href="#" class="main-video__channel-like pr-2">
+                                    <i class="fa fa-thumbs-up"></i>    33
+                                </a>
+                                <a href="#" class="main-video__channel-dislike pr-2">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="main-video__channel-like">
+                                    REPLY
+                                </a>
+                            </div>
+                            <a href="#" class="main-channel-video__comment-replies pt-1">
+                                <i class="fa fa-caret-down pr-2"></i> View 3 replies
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>John Smith</span><span class="submitted-time">  2 Months ago</span>
-                        <p>Bill Gates said, "Write some lines of code." and he understood, "Do some lines of coke."</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 1k</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 5 replies</a></p>
+                    <div class="main-video__channel-comment-container flex pb-4">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnh1EZCdZyI9ZfTG6Yb9QBc7-cPAMDCdRC9X0w=s48-c-k-c0xffffffff-no-rj-mo" alt="" class="main-video__channel-comment-logo mr-2">
+                        <div class="main-video__channel-comment-details">
+                            <p class="main-video__channel-comment-author ">
+                                Pokemon Master 
+                                <span class="main-video__channel-comment-date">
+                                    4 months ago
+                                </span>
+                            </p>
+                           
+                            <p class="main-video__channel-comment pb-1">
+                                Damn....this guy is a genius!!!! Though he looks lazy all the time!!
+                            </p>
+                            <div class="main-video__channel-comment-like-dislike-reply">
+                                <a href="#" class="main-video__channel-like pr-2">
+                                    <i class="fa fa-thumbs-up"></i>    33
+                                </a>
+                                <a href="#" class="main-video__channel-dislike pr-2">
+                                    <i class="fa fa-thumbs-down"></i>
+                                </a>
+                                <a href="#" class="main-video__channel-like">
+                                    REPLY
+                                </a>
+                            </div>
+                            <a href="#" class="main-channel-video__comment-replies pt-1">
+                                <i class="fa fa-caret-down pr-2"></i> View 3 replies
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>FeatherlessAngel</span><span class="submitted-time">  1 Year ago</span>
-                        <p>looks like he ate the worlds hottest burrito</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 1k</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 8 replies</a></p>
+        </section>
+            
+         <!---------------------- Suggestions Videos ------------------------>
+         <section class="suggestion-videos">
+             <div class="suggestion-videos__chat-replay mb-2">
+                 <p class="suggestion-videos__chat-replay-paragraph">
+                     SHOW CHAT REPLAY
+                 </p>
+             </div>
+             <div class="suggestion-videos__upnext-autoplay flex flex--justify-content-space-between">
+                 <p class="suggestion-videos__upnext">
+                     Up next
+                 </p>
+                 <div class="suggestion-videos__autoplay-container ">
+                    <span class="suggestion-videos__autoplay-paragraph pr-1">
+                        AUTOPLAY
+                    </span>
+                    <span class="suggetion__videos-autoplay">
+                        <i class="fa fa-toggle-on icon-size-2"  aria-hidden="true"></i>
+
+                    </span>
+
+                 </div>
+             </div>
+             <div class="suggestion__videos-main-suggestion-video-container mt-2">
+                <div class="container flex flex--align-items-center mb-2">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
                     </div>
+                     <div class="suggestion-videos-main-text-box">
+                         <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
                 </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>JMCrafted                        </span><span class="submitted-time">  3 Years ago</span>
-                        <p>why is he sweating so much?</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 1.7k</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 94 replies</a></p>
+                <div class="container flex flex--align-items-center mb-2">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                     <div class="suggestion-videos-main-text-box">
+                        <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
                 </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>Paulo Nideck - Inglês direto ao ponto</span><span class="submitted-time">  1 Year ago</span>
-                        <p>If he continued saying developers he would actually explode</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 486</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        <p><a href="#"><i class="fas fa-sort-down"></i> View 3 replies</a></p>
+                <div class="container flex flex--align-items-center mb-2">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                     <div class="suggestion-videos-main-text-box">
+                        <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
                 </div>
-                <div class="container user-comments">
-                    <a href="#" class="viewer-channels-logo">S</a>
-                    <div class="viewer-comments-description">
-                        <span>Artificial Neuron</span><span class="submitted-time">  3 Days ago (edited)</span>
-                        <p>Microsoft: Ballmer, we have a challenge for you. You need to say the word</p>
-                        <a href="#"><i class="fas fa-thumbs-up"></i> 4</a>
-                        <a href="#"><i class="fas fa-thumbs-down"></i> REPLY</a>
-                        
+                <div class="container flex flex--align-items-center mb-2">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                     <div class="suggestion-videos-main-text-box">
+                        <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
                 </div>
+                <div class="container flex flex--align-items-center mb-2">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                     <div class="suggestion-videos-main-text-box">
+                        <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
+                </div>
+                <div class="container flex flex--align-items-center">
+                    <div class="suggestion__videos-main-video mr-1">
+                        <iframe src="https://www.youtube.com/embed/y2BD4MJqV20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                     <div class="suggestion-videos-main-text-box">
+                        <p class="suggestion__videos-main-video-title">
+                            LeetCode 5. Longest Palindromic Substring  
+                         </p>
+                         <p class="suggestion__videos-main-video-author">
+                             Nick White
+                         </p> 
+                         <p class="suggestion__vidoes-main-video-views-date">
+                             124K views 
+                             <span class="suggestion__videos-main-video-date">
+                                1 year ago
+                             </span>
+                         </p>
+                     </div>
+                </div>
+                <div class="suggestion__videos-show-more">
+                    SHORE MORE
+                </div>
+                
+                
+             </div>
+         </section>
+    </main>
+     <!---------------------- Side menu ------------------------>
+     <div class="side-menu-container">
+        <div class="side-menu pt-3">
+            <div class="container boder-bottom-grey flex flex--align-items-center pl-4 pb-1">
+                <div class="side-menu__hamburger pr-5">
+                    <div class="side-menu__bars"></div>
+                    <div class="side-menu__bars"></div>
+                    <div class="side-menu__bars"></div>
+                </div>
+                <a href="#" class="side-menu__link flex flex--align-items-center">
+                    <span class="side-menu__link-logo">
+                        <i class="fa fa-youtube-play" ></i>
+                    </span>
+                    <span class="side-menu__link-text">
+                          Youtube
+                    </span>  
+                </a>
+            </div>
+            <div class="boder-bottom-grey pt-1 pb-1">
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+    
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Home
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Trending
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Suscriptions
+                    </span>
+                </a>
+            </div>
+            <div class="boder-bottom-grey pt-1 pb-1">
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Library
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-history" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        History
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Your Videos
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Watch Later
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Liked Videos
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        CS50 Lecture 2019
+                    </span>
+                </a>
+               
 
             </div>
-            <!-- container for thumbnail videos -->
-           <div class="thumnbail-videos">
-               <!-- top video contianer -->
-            <div class="top-video-container">
-                <div class="top-container">
-                    <p>UP NEXT</p>
-                    <span>AUTOPLAY <i class="fas fa-toggle-on"></i></span>
-                </div>
-                <div class="container-thumbnail">
-                    <iframe  
-                    src="https://www.youtube.com/embed/I14b-C67EXY" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                    <div class="thumnbail-video-description">
-                        <p>Steve Ballmer: going crazy on stage</p>
-                        <span> 
-                        Recommended for you</span>
-                    </div>
-                </div>
-            </div> 
-            <!--top video contianer end -->
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UF8uR6Z6KLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>Steve Jobs' 2005 Stanford Commencement Address</p>
-                    <span>33,776,176 views</span>
-                </div>
+            <div class="boder-bottom-grey pt-1 pb-1">
+                <span class="side-menu__subscriptions pl-4 pt-3">SUBSCRIPTIONS</span>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <img src="https://yt3.ggpht.com/ytc/AAUvwni-Wm0ZBDYJYFwySP2esxgc8s9mKiwmI3yJrmjlHQ=s88-c-k-c0x00ffffff-no-rj" alt="account logo of net ninja" class="mr-2">
+                    <span class="side-menu__icon-text">
+                        The Net Ninja
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <img src="https://yt3.ggpht.com/ytc/AAUvwnhDzZbKQCjKes-oMcb_pU4nV1qan1VCvzBiRQVFFw=s88-c-k-c0x00ffffff-no-rj" alt="account logo of net ninja" class="mr-2">
+                    <span class="side-menu__icon-text">
+                        Nick White
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <img src="https://yt3.ggpht.com/ytc/AAUvwnjYf7Pp1hYvMkWvx5zTK-UO2rW9u4ceppH-JtpjoA=s88-c-k-c0x00ffffff-no-rj" alt="account logo of net ninja" class="mr-2">
+                    <span class="side-menu__icon-text">
+                        Samuel Miller
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <img src="https://yt3.ggpht.com/ytc/AAUvwng963DN2_MIbKuvMWRrN4KG920h3Y4YHg6KET9vZg=s88-c-k-c0x00ffffff-no-rj" alt="account logo of net ninja" class="mr-2">
+                    <span class="side-menu__icon-text">
+                        Traversy Media
+                    </span>
+                </a>
             </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m2Ux2PnJe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>Hour of Code - Bill Gates explains If statements </p>
-                    <span>955,155 views</span>
-                </div>
+            <div class="boder-bottom-grey pt-1 pb-1">
+                <span class="side-menu__subscriptions pl-4 pt-3">MORE FROM YOUTUBE</span>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Gaming
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-rss" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Live
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Learning
+                    </span>
+                </a>
             </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mgooqyWMTxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>Hour of Code - Mark Zuckerburg teaches Repeat Loops </p>
-                    <span>868,252 views</span>
-                </div>
+            <div class="boder-bottom-grey pt-1 pb-1">
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Settings
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-flag" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Report Policy
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Help
+                    </span>
+                </a>
+                <a href="#" class="hover-on flex flex--align-items-center pl-4 pb-1 pt-1">
+                    <span class="side-menu__home-icon-container pr-5">
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </span>
+                    <span class="side-menu__icon-text">
+                        Send Feedback
+                    </span>
+                </a>
             </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/F9GujgK0y2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <div class="thumnbail-video-description">
-                    <p>Coding is Easy & Why you should learn coding | AeeKayPlus </p>
-                    <span>4,445,481 views</span>
-                </div>
-            </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wVn1TqUfZjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>Mark Zuckerberg on helping others learn to code </p>
-                    <span>179,513 views</span>
-                </div>
-            </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mmQG_BCiVHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>[in]genius: facebook's youngest engineer</p>
-                    <span>2,395,947 views</span>
-                </div>
-            </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/azcrPFhaY9k?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>How To Think Like A Programmer </p>
-                    <span>356,096 views</span>
-                </div>
-            </div>
-            <div class="container-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/egQH4vM1q1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="thumnbail-video-description">
-                    <p>Hello, World! Award Winning Short Film (Shot on GH4) </p>
-                    <span>594,037 views</span>
-                </div>
+            <div class="boder-bottom-grey">
+                <nav class="nav mt-3">
+                    <ul class="nav__list-top pb-3 flex flex-wrap">
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Policy
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Copyright
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Advertise 
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Developers
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav__list-bottom flex flex-wrap">
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Terms
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Privacy  
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Policy & Safety  
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                How Youtube Works
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                               Test New Features 
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">
+                                Developers
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="youtube-copyright mt-1 pl-3 pb-3">
+                        &copy; 2020 Google LLC
+                    </p>
+                </nav>
             </div>
         </div>
-        </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    </div>
+    
+    <script src="index.js"></script>
 </body>
 </html>
