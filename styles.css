@@ -528,12 +528,13 @@ body {
   }
  
 .side-menu-container   ::-webkit-scrollbar-thumb {
-    background: var(--navbar-bg-color)
+    background: var(--navbar-bg-color);
   }
   /* hover on links */
 .side-menu-container .hover-on:hover {
     background-color: rgb(58, 57, 57);
 /* media queries */
+ 
 @media(max-width: 1050px) {
     .main {
         grid-template-areas: 
