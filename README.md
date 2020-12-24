@@ -1,8 +1,8 @@
 # Youtube Clone built by Johongir Rahimov
 
 
-> Project part of Odin [curriculum](https://www.theodinproject.com/courses/html-and-css/lessons/embedding-images-and-video)
-> Visit to [view]() a project
+> ### Project part of Odin [curriculum](https://www.theodinproject.com/courses/html-and-css/lessons/embedding-images-and-video)
+> ### Visit to [view]() a project
 
 ## Built with
  * HTML5
@@ -11,7 +11,7 @@
 
 
 ## Author
-man: Johongir 
+:man Johongir 
 * Github [Johongir](https://github.com/Johongirr)
 
 ## Show your support
