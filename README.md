@@ -19,7 +19,7 @@ Give a :star: if u like this project
 
 
 ## Contributing
-Contributions, [issues](https://github.com/Johongirr/calculator/issues) and feature requests are welcome!
+Contributions, [issues](https://github.com/Johongirr/the-next-web/issuess) and feature requests are welcome!
 
 
 ## Licence
